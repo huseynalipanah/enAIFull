@@ -1,0 +1,82 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Spline Sans", sans-serif;
+    font-optical-sizing:  auto;
+    font-style: normal;
+  transition: 1s;
+  
+
+}
+@keyframes shadowAnimationDark {
+  0% {
+    box-shadow: rgba(255, 255, 255, 0.08) 0px 0px 10px 0px;
+  }
+  50% {
+    box-shadow: rgba(255, 255, 255, 0.08) 0px 0px 20px 0px;
+  }
+  100% {
+    box-shadow: rgba(255, 255, 255, 0.08) 0px 0px 10px 0px;
+  }
+}
+@keyframes shadowAnimationLight {
+  0% {
+    box-shadow: rgba(14, 20, 36, 0.08) 0px 0px 20px 0px,
+                rgba(14, 20, 36, 0.08) 0px 0px 20px 0px;
+  }
+  50% {
+    box-shadow: rgba(14, 20, 36, 0.08) 10px 10px 20px 0px,
+                rgba(14, 20, 36, 0.08) -10px -10px 20px 0px;
+  }
+  100% {
+    box-shadow: rgba(14, 20, 36, 0.08) 0px 0px 20px 0px,
+                rgba(14, 20, 36, 0.08) 0px 0px 20px 0px;
+  }
+}
+
+div {
+  animation: shadowAnimation 2s infinite;
+}
+
+:root{
+  --background-color:#eff5f5;
+  --primary-text-color:#6b7989;
+  --box-shadow-color:shadowAnimationLight 2s infinite;
+  --slide-background-color: #ff6200ba;
+  --theme-button:#d6e4e5;
+  --theme-button-text:black;
+  
+}
+[data-theme="dark"]{
+  --background-color:#041C32;
+  --primary-text-color:#fff;
+  --box-shadow-color:shadowAnimationDark 2s infinite;
+  --slide-background-color:#fc8c42ba;
+  --theme-button:#334756;
+  --theme-button-text:white
+
+
+}
+
+.app{
+  background-color:var(--background-color);
+
+}
+body {
+  background-color:var(--background-color);
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff7000;
+  outline: 1px solid #ff9000;
+}

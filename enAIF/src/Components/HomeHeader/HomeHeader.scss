@@ -1,0 +1,75 @@
+.header {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Spline Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 30px;
+  background-image: url(https://copygen.themenio.com/assets/images/pattern/dot-a.png);
+  background-repeat: repeat;
+  
+  .header-surface {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header-text {
+      text-align: center;
+      h1 {
+        font-size: 5em;
+        line-height: 75px;
+        color: var( --primary-text-color);
+        margin-bottom: 25px;
+        span {
+          background: #ff6000;
+          background: linear-gradient(to right, #ff6000 15%, #497174 85%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      p {
+        font-size: 26px;
+        color: var( --primary-text-color);
+        margin-bottom: 25px;
+        span {
+          background: #ff6000;
+          background: linear-gradient(to right, #ff6000 15%, #497174 85%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+    .all-ai {
+      button {
+        background: rgb(255, 152, 50);
+        background: linear-gradient(
+          135deg,
+          rgba(255, 152, 50, 1) 0%,
+          rgba(255, 96, 0, 1) 100%
+        );
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px;
+        padding: 10px 24px;
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: #ffefd3;
+        border-radius: 10px;
+        display: block;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background-position: right center;
+          text-decoration: none;
+          color: #461404;
+        }
+      }
+    }
+  }
+}

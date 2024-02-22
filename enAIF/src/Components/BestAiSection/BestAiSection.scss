@@ -1,0 +1,36 @@
+.best-ai {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  animation: var(--box-shadow-color);
+
+  h1 {
+    margin: 0 20px;
+    font-size: 50px;
+    background:  rgb(255,96,0);
+    background: linear-gradient(to right, #ff6000 15%, #497174 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: "Spline Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 30px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 30px; 
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 20px; 
+    }
+  }
+}
